@@ -1,0 +1,7 @@
+<?php
+            if (isset($_SESSION['user']) && !empty($_SESSION['user'])) :
+            ?>
+                <div class="product-comment__logined">
+                    <form action="<?= $_SERVER['PHP_SELF'] ?>" class="product-comment__form-comment" method="post">
+                        <label for="product-comment" class="product-comment__form-label">Nhập bình luận của bạn:</label>
+                        <textarea class="product-comment__form-input form-control" name="content" id="product-comm
